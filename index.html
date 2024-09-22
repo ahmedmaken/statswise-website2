@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StatsWise</title>
-    <!-- Link to the CSS file -->
     <link rel="stylesheet" href="styles.css">
+    <!-- AOS Library for animations on scroll -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,23 +22,23 @@
     </header>
 
     <main>
-        <section id="home">
+        <section id="home" class="section" data-aos="fade-up">
             <h1>Welcome to StatsWise</h1>
             <p>Your go-to platform for data insights.</p>
         </section>
 
-        <section id="about">
+        <section id="about" class="section" data-aos="fade-right">
             <h2>About Us</h2>
             <p>StatsWise is dedicated to providing accurate data analytics to help you make informed decisions.</p>
         </section>
 
-        <section id="services">
+        <section id="services" class="section" data-aos="fade-left">
             <h2>Our Services</h2>
             <p>Explore the wide range of services we offer, from data analysis to consultation.</p>
             <button id="service-btn">Learn More</button>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="section" data-aos="zoom-in">
             <h2>Contact Us</h2>
             <form id="contact-form">
                 <label for="name">Name:</label>
@@ -55,7 +56,10 @@
         <p>&copy; 2024 StatsWise. All rights reserved.</p>
     </footer>
 
-    <!-- Link to the JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="scripts.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS animations
+    </script>
 </body>
 </html>
