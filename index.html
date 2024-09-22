@@ -4,62 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StatsWise</title>
+    <title>Statswise</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- AOS Library for animations on scroll -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Link to GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="navbar-brand">STATSWISE</a>
+            <ul class="nav">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#showcase" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section id="home" class="section" data-aos="fade-up">
-            <h1>Welcome to StatsWise</h1>
-            <p>Your go-to platform for data insights.</p>
-        </section>
+    <!-- Home Section -->
+    <section id="home" class="home-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-3 home-title">STATSWISE</h1>
+            <p class="lead">Empowering businesses through data</p>
+            <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
+        </div>
+    </section>
 
-        <section id="about" class="section" data-aos="fade-right">
-            <h2>About Us</h2>
-            <p>StatsWise is dedicated to providing accurate data analytics to help you make informed decisions.</p>
-        </section>
-
-        <section id="services" class="section" data-aos="fade-left">
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5">
+        <div class="container text-center">
             <h2>Our Services</h2>
-            <p>Explore the wide range of services we offer, from data analysis to consultation.</p>
-            <button id="service-btn">Learn More</button>
-        </section>
+            <p>We offer data-driven solutions to help your business thrive.</p>
+            <!-- Add more service details here -->
+        </div>
+    </section>
 
-        <section id="contact" class="section" data-aos="zoom-in">
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase-section py-5">
+        <div class="container text-center">
+            <h2>Our Products</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="product-box">
+                        <img src="images/product1.jpg" alt="Product 1">
+                        <h3>Product Name</h3>
+                    </div>
+                </div>
+                <!-- Add more product boxes as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container text-center">
             <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <p>Get in touch to learn more about how we can help your business.</p>
+            <!-- Add contact form or contact details -->
+        </div>
+    </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 StatsWise. All rights reserved.</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="scripts.js"></script>
-    <script>
-        AOS.init(); // Initialize AOS animations
-    </script>
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
